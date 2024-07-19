@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional, for better visual demonstration */
+}
+
+#container::before {
+    content: 'Before content';
+    color: #f00;
+    font-size: 20px;
+    position: absolute;
+    top: -30px; /* Adjust position as needed */
+    left: 0;
+}
+
+#container::after {
+    content: 'After content';
+    color: #f00;
+    font-size: 20px;
+    position: absolute;
+    bottom: -30px; /* Adjust position as needed */
+    left: 0;
+}
