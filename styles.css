@@ -1,29 +1,27 @@
 /*  your css code here. If applicable */
-/* Style for the #container element */
+/* Apply margin to the container */
 #container {
     margin: 20px;
-    position: relative;
-    padding: 20px; /* Optional: To add space inside the container */
+    position: relative; /* Required for positioning pseudo-elements */
 }
 
-/* Pseudo-element for content before the container */
+/* Insert content before the container */
 #container::before {
-    content: "Before Content ";
+    content: "Special Text Before";
     color: #f00;
     font-size: 20px;
     position: absolute;
-    top: -30px; /* Adjust to position before the container */
-    left: 0;
+    left: -200px; /* Adjust according to the desired layout */
+    top: 0;
 }
 
-/* Pseudo-element for content after the container */
+/* Insert content after the container */
 #container::after {
-    content: " After Content";
+    content: "Special Text After";
     color: #f00;
     font-size: 20px;
     position: absolute;
-    bottom: -30px; /* Adjust to position after the container */
-    left: 0;
+    right: -200px; /* Adjust according to the desired layout */
+    top: 0;
 }
-
 
